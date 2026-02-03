@@ -35,6 +35,11 @@
   <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=USERNAME-ANDA&layout=compact&theme=tokyonight&hide_border=false" />
 </p>
 
+### 🏆 Pencapaian
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=agatha-05&theme=flat&no-frame=true&no-bg=true&margin-w=4" />
+</p>
+
 ---
 
 ### 🐍 Contribution Snake
