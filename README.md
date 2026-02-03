@@ -4,13 +4,7 @@
   <img src="https://komarev.com/ghpvc/?username=USERNAME-ANDA&label=Profil%20Views&color=0e75b6&style=flat" alt="Views" />
 </p>
 
-### 🚀 Tentang Saya
-- 🔭 Saya seorang **Web Developer** yang berfokus pada ekosistem PHP dan JavaScript.
-- 🌱 Saat ini saya aktif membangun aplikasi menggunakan **Laravel** dan memperdalam kemampuan Frontend.
-- ⚡ Saya suka membangun sistem yang efisien dan tampilan yang user-friendly.
-- 📫 Hubungi saya: **[Email Anda / Link LinkedIn]**
 
----
 
 ### 🛠 Tech Stack & Tools
 
