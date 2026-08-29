@@ -36,17 +36,36 @@ jobs:
       - name: Generate Trophies card
         run: |
           mkdir -p profile
-          curl -f -sSL "https://github-profile-trophy.vercel.app/?username=${{ github.repository_owner }}&theme=onedark&row=2&column=4&margin-w=15&margin-h=15" -o profile/.trophies.tmp || true
-          if head -c 300 profile/.trophies.tmp 2>/dev/null | grep -q "<svg"; then
+          for url in \
+            "https://github-profile-trophy.vercel.app/?username=${{ github.repository_owner }}&theme=onedark&row=2&column=4&margin-w=15&margin-h=15" \
+            "https://trophygithubreadmelang.cybee.dpdns.org/?username=${{ github.repository_owner }}&theme=onedark&row=2&column=4&margin-w=15&margin-h=15" \
+            "https://trophy.ryglcloud.net/?username=${{ github.repository_owner }}&theme=onedark&row=2&column=4&margin-w=15&margin-h=15" \
+            "https://github-profile-trophy-orcin-eta.vercel.app/?username=${{ github.repository_owner }}&theme=onedark&row=2&column=4&margin-w=15&margin-h=15" \
+            "https://github-profile-repo.vercel.app/?username=${{ github.repository_owner }}&theme=onedark&row=2&column=4&margin-w=15&margin-h=15"; do
+            echo "Mencoba: $url"
+            if curl -f -sSL "$url" -o profile/.trophies.tmp && head -c 300 profile/.trophies.tmp | grep -q "<svg"; then
+              echo "OK dari mirror"
+              break
+            else
+              rm -f profile/.trophies.tmp
+            fi
+          done
+          if [ -f profile/.trophies.tmp ]; then
             mv profile/.trophies.tmp profile/trophies.svg
           else
-            rm -f profile/.trophies.tmp
+            echo "Semua mirror trophy gagal, melewatkan kartu ini"
           fi
 
       - name: Generate Activity Graph card
         run: |
           mkdir -p profile
-          curl -f -sSL "https://github-readme-activity-graph.vercel.app/graph?username=${{ github.repository_owner }}&theme=react-dark&hide_border=true&area=true" -o profile/.graph.tmp || true
+          if curl -f -sSL "https://github-readme-activity-graph.vercel.app/graph?username=${{ github.repository_owner }}&theme=react-dark&hide_border=true&area=true" -o profile/.graph.tmp && head -c 300 profile/.graph.tmp | grep -q "<svg"; then
+            echo "Activity graph dari layanan utama"
+          else
+            rm -f profile/.graph.tmp
+            echo "Layanan utama mati, pakai heatmap kontribusi ghchart"
+            curl -f -sSL "https://ghchart.rshah.org/${{ github.repository_owner }}" -o profile/.graph.tmp || true
+          fi
           if head -c 300 profile/.graph.tmp 2>/dev/null | grep -q "<svg"; then
             mv profile/.graph.tmp profile/activity-graph.svg
           else
