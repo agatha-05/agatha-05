@@ -1,7 +1,7 @@
 # 👋 Halo, Saya **Muhammad Arif**!
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=26&duration=2800&pause=800&color=39FF14&center=true&vCenter=true&multiline=true&width=560&height=90&lines=Full-Stack+Web+Developer;PHP+%26+Laravel+Enthusiast;Membangun+Web+yang+Efisien%2C+Viral+dan+Efektif;Selalu+Belajar+Hal+Baru+%F0%9F%9A%80" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=20&duration=2800&pause=800&color=39FF14&center=true&vCenter=true&multiline=true&width=700&height=120&lines=Full-Stack+Web+Developer;PHP+%26+Laravel+Enthusiast;Membangun+Web+yang+Efisien+%26+Viral;Selalu+Belajar+Hal+Baru+%F0%9F%9A%80" alt="Typing SVG" />
 </p>
 
 <p align="center">
@@ -20,7 +20,7 @@
 
 > Seorang pengembang web yang berfokus pada **PHP & Laravel**, senang membangun aplikasi web yang cepat, efisien, dan user-friendly. Saya percaya bahwa kode yang baik adalah kode yang mudah dibaca, dirawat, dan dipahami oleh orang lain.
 
-- 🌱 Saat ini sedang mendalami **Laravel** dan **JavaScript**
+- 🌱 Saat ini sedang mendalami **Laravel**, **Vue.js**, dan **TailwindCSS**
 - 💡 Suka mengeksplorasi teknologi baru dan best practices pengembangan web
 - 🎯 Tujuan: Membangun web yang berdampak dan membantu banyak orang
 - 📫 Hubungi aku : **apalahkm3tuh@gmail.com**
@@ -34,13 +34,15 @@
 ![PHP](https://img.shields.io/badge/PHP-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
 ![Laravel](https://img.shields.io/badge/Laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![Vue.js](https://img.shields.io/badge/Vue.js-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)
+![Inertia.js](https://img.shields.io/badge/Inertia.js-%239553E9.svg?style=for-the-badge)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
 ### 🗄️ Database
 
 ![MySQL](https://img.shields.io/badge/MySQL-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
 
 ### 🔧 Tools & Environment
 
@@ -49,32 +51,31 @@
 ![Visual Studio Code](https://img.shields.io/badge/VS%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 ![Laragon](https://img.shields.io/badge/Laragon-0E83CD?style=for-the-badge&logo=laragon&logoColor=white)
 ![Figma](https://img.shields.io/badge/Figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 
 ---
 
 ## 📊 Statistik GitHub
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=agatha-05&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub Stats" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=agatha-05&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top Languages" width="40%" />
+  <img src="./profile/github-stats.svg" alt="GitHub Stats" width="48%" />
+  <img src="./profile/top-langs.svg" alt="Top Languages" width="40%" />
 </p>
 
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=agatha-05&theme=tokyonight&hide_border=true" alt="GitHub Streak" width="55%" />
 </p>
 
-<!-- 🐍 Snake Animation - Aktifkan dengan menambahkan workflow Generate Snake Animation -->
+<!-- 🐍 Snake Animation -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/agatha-05/agatha-05/output/github-contribution-grid-snake-dark.svg" alt="Snake Animation" />
+  <img src="./profile/snake-dark.svg" alt="Snake Animation" />
 </p>
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=agatha-05&theme=onedark&row=2&column=4&margin-w=15&margin-h=15&no-frame=true" alt="GitHub Trophies" width="80%" />
+  <img src="./profile/trophies.svg" alt="GitHub Trophies" width="80%" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.cyclic.app/graph?username=agatha-05&theme=react-dark&hide_border=true&area=true" alt="Activity Graph" width="95%" />
+  <img src="./profile/activity-graph.svg" alt="Activity Graph" width="95%" />
 </p>
 
 ---

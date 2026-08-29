@@ -1,0 +1,72 @@
+name: Update Profile Cards
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Generate GitHub Stats card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github
+          path: profile/github-stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate Top Languages card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&hide_border=true&theme=tokyonight
+          path: profile/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate Trophies card
+        run: |
+          mkdir -p profile
+          curl -f -sSL "https://github-profile-trophy.vercel.app/?username=${{ github.repository_owner }}&theme=onedark&row=2&column=4&margin-w=15&margin-h=15" -o profile/.trophies.tmp || true
+          if head -c 300 profile/.trophies.tmp 2>/dev/null | grep -q "<svg"; then
+            mv profile/.trophies.tmp profile/trophies.svg
+          else
+            rm -f profile/.trophies.tmp
+          fi
+
+      - name: Generate Activity Graph card
+        run: |
+          mkdir -p profile
+          curl -f -sSL "https://github-readme-activity-graph.vercel.app/graph?username=${{ github.repository_owner }}&theme=react-dark&hide_border=true&area=true" -o profile/.graph.tmp || true
+          if head -c 300 profile/.graph.tmp 2>/dev/null | grep -q "<svg"; then
+            mv profile/.graph.tmp profile/activity-graph.svg
+          else
+            rm -f profile/.graph.tmp
+          fi
+
+      - name: Generate Snake animation
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            profile/snake-dark.svg?palette=github-dark
+            profile/snake.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64b1f5,#4bb4fa,#3ba5fa
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit & push cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/
+          git commit -m "Update profile cards" || exit 0
+          git push
