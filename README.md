@@ -1,7 +1,7 @@
 # 👋 Halo, Saya **Muhammad Arif**!
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=20&duration=2800&pause=800&color=39FF14&center=true&vCenter=true&multiline=true&width=700&height=120&lines=Full-Stack+Web+Developer;PHP+%26+Laravel+Enthusiast;Membangun+Web+yang+Efisien+%26+Viral;Selalu+Belajar+Hal+Baru+%F0%9F%9A%80" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=20&duration=2800&pause=800&color=39FF14&center=true&vCenter=true&multiline=true&width=700&height=120&lines=Full-Stack+Web+Developer;PHP+%26+Laravel+Enthusiast;Membangun+Web+yang+Efisien+%26+;Selalu+Belajar+Hal+Baru+%F0%9F%9A%80" alt="Typing SVG" />
 </p>
 
 <p align="center">
@@ -24,6 +24,7 @@
 - 💡 Suka mengeksplorasi teknologi baru dan best practices pengembangan web
 - 🎯 Tujuan: Membangun web yang berdampak dan membantu banyak orang
 - 📫 Hubungi aku : **mhmmd.arif.polhas@gmail.com**
+- 🌐 Web Potofolio : https://portofolio-mhmmdarif.netlify.app
 
 ---
 
