@@ -23,7 +23,7 @@
 - 🌱 Saat ini sedang mendalami **Laravel**, **Vue.js**, dan **TailwindCSS**
 - 💡 Suka mengeksplorasi teknologi baru dan best practices pengembangan web
 - 🎯 Tujuan: Membangun web yang berdampak dan membantu banyak orang
-- 📫 Hubungi aku : **apalahkm3tuh@gmail.com**
+- 📫 Hubungi aku : **mhmmd.arif.polhas@gmail.com**
 
 ---
 
@@ -83,7 +83,7 @@
 ## 📬 Kontak
 
 <p align="center">
-  <a href="mailto:apalahkm3tuh@gmail.com">
+  <a href="mailto:mhmmd.arif.polhas@gmail.com">
     <img src="https://img.shields.io/badge/Email-apalahkm3tuh%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
 </p>
